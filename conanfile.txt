@@ -1,0 +1,6 @@
+[requires]
+argparse/2.1
+libsodium/1.0.18
+
+[generators]
+cmake
