@@ -1,6 +1,7 @@
 ## randpass
 
-The C++ `<random>` uses the The **Mersenne Twister** which is [pseudorandom number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) (PRNG) which is not cryptographically secure. While surfing through libsodium's [documentation](https://libsodium.gitbook.io/doc/) I noticed in the [FAQ](https://libsodium.gitbook.io/doc/quickstart#how-do-i-generate-random-numbers-that-are-safe-to-use-for-cryptography) `randombytes` API can be used to generate random numbers that are cryptographically safe. So wanted to use the [libsodium's](https://libsodium.gitbook.io/doc/generating_random_data) random number generation for random password generation. I haven't checked the "true" randomness of the output here and made this as a hobby project.
+The C++ `<random>` uses the The **Mersenne Twister** which is [pseudorandom number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) (PRNG). The Mersene Twister is not cryptographically secure PRNG. While surfing through libsodium's [documentation](https://libsodium.gitbook.io/doc/) I noticed in the [FAQ](https://libsodium.gitbook.io/doc/quickstart#how-do-i-generate-random-numbers-that-are-safe-to-use-for-cryptography) the `randombytes` API which can be used to produce cryptographicaly secure PNRG. I've made an attempt to use the [libsodium's](https://libsodium.gitbook.io/doc/generating_random_data) PRNG to generate random passwords. 
+> NOTE : I haven't checked the *true* randomness of the output here. 
 
 ## Installtion
 
